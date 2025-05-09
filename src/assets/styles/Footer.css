@@ -1,0 +1,92 @@
+/* General Styles */
+.footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-left {
+  flex: 1;
+  font-size: 14px;
+}
+
+.footer-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin: 0 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4caf50;
+  transform: translateY(-3px);
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin: 0 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+
+/* Add custom icons */
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}

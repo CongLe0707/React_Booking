@@ -1,0 +1,110 @@
+/* General Styles */
+.content-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px; /* Tạo khoảng cách giữa các card */
+  }
+  
+  .content-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .content-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    background-color: #f0f8ff; /* Màu nền thay đổi khi hover */
+  }
+  
+  .content-arrow {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    z-index: 2;
+  }
+  
+  .content-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content-item:hover .content-img {
+    transform: scale(1.05); /* Hiệu ứng zoom cho hình ảnh khi hover */
+  }
+  
+  .content-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .content-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .content-item:hover .content-title {
+    color: #007bff; /* Màu tiêu đề thay đổi khi hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Giảm khoảng cách giữa các card khi ở màn hình nhỏ */
+    }
+  
+    .content-item {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-item {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-title {
+      font-size: 18px;
+    }
+  
+    .content-description {
+      font-size: 13px;
+    }
+  }
+  

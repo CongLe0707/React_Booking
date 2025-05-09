@@ -1,0 +1,144 @@
+/* Container chính */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Hộp form */
+  .auth-box {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    width: 360px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Tabs Đăng nhập / Đăng ký */
+  .auth-tabs {
+    display: flex;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .auth-tabs button {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+    transition: color .2s;
+  }
+  
+  .auth-tabs button.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Social login buttons */
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  
+  .btn-fb {
+    background: #4267B2;
+    color: #fff;
+  }
+  
+  .btn-fb:hover {
+    background: #365899;
+  }
+  
+  .btn-gg {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+  }
+  
+  .btn-gg:hover {
+    background: #f7f7f7;
+  }
+  
+  /* Divider HOẶC */
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+  
+  .divider::before {
+    margin-right: 8px;
+  }
+  
+  .divider::after {
+    margin-left: 8px;
+  }
+  
+  /* Form inputs */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .auth-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .auth-form input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Nút submit */
+  .btn-submit {
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  
+  .btn-submit:hover {
+    background: #0056b3;
+  }
+  
